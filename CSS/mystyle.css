@@ -39,19 +39,21 @@ main{
     font-size: 30px;
     font-weight: bold;
 }
-#submit{
-    float: right;
+#button{
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 2px 2px 2px 2px red;
     font-size:1.5em;
 }
 
-#submit :hover{
+#button:hover{
     font-weight: bolder;
-    font-size: 1.7em;
+    color: white;
+    background-color: green;
+    font-size: 1.6em;
+    cursor: pointer;
 }
-#title{
+#title, #description{
     font-family:cursive;
     font-style: oblique;
     font-weight: bold;
@@ -59,6 +61,12 @@ main{
     font-size:2em;
     text-align: center;
     text-shadow: 4px 4px 8px red;
+}
+#description{
+    margin-top: 0px;
+}
+#title{
+    margin-bottom: 0px;
 }
 option{
     font-size: 22px;
@@ -91,9 +99,12 @@ textarea {
     border-style: solid;
     border-width: 10px;
     border-radius: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
+   
 }
