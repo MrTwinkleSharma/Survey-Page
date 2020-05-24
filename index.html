@@ -6,37 +6,38 @@
 	<meta charset="UTF-8">
 </head>
 <body>
+	
 	<h1 id="title">
-freeCodeCamp Survey Form
-<br>
-Thank you for taking the time to help us improve the platform
+FreeCodeCamp Survey Form
 </h1>
-	<p id="description"> </p>  
+	<p id="description">Thank you for taking the time to help us improve the platform
+ </p>  
+	
 	<main  id="main" > 
   		
   		<form id="survey-form" action="action_page.php">
   			
   			<fieldset id="personal">
   			<legend>Personal Information</legend>
-  			<label id="name-label" for="name" >Name:</label><br>
-   			<input type="text" id="name" name="name" placeholder="Enter Your Name"><br>
+  			<label id="name-label" for="name" >Name:</label>
+   			<input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><hr>
+   	
 
-
-   			<label id="age-label" for="age" >Age(Optional):</label><br>
-   			<input type="text" id="age" maxlength="2" minlength="2" placeholder="Enter Your Age"><br>
+   			<label id="age-label" for="age" >Age(Optional):</label>
+   			<input type="number" id="age" maxlength="2" minlength="2" placeholder="Enter Your Age" min="10"><br><hr>
    			
-   			<label id="email-label" for="email" >Email Address:</label><br>
-   			<input type="text" id="email" maxlength="64" placeholder="Enter a Valid Email"><br>
+   			<label id="email-label" for="email" >Email Address:</label>
+   			<input type="text" id="email" maxlength="64" placeholder="Enter a Valid Email" required><br><hr>
    		
 
-   			<label 	id="number-label" for="number" >Contact Number:</label><br>
-   			<input type="text" id="number" maxlength="13" placeholder="Enter Contact Number"><br>		
+   			<label 	id="number-label" for="number">Contact Number:</label>
+   			<input type="number" id="number" maxlength="13" placeholder="Enter Contact Number" ><br>		
     		
   			</fieldset><br>
   			<fieldset id="dropdown">
   					<legend>Current Role</legend>
   			<label id="curr-rol-label" for="curr-rol">Select what describes your current role:</label>
- 			<select id="curr-rol" name="curr-rol">
+ 			<select id="curr-rol" name="curr-rol" required>
  				<option value="none" disabled selected> 
           Select an Option</option>
 
@@ -51,15 +52,15 @@ Thank you for taking the time to help us improve the platform
   			<fieldset>
   				<legend>Would you recommend freeCodeCamp to a friend?</legend>	
   				<label id="recommend-friend" for="Definately">
-  				<input type="radio" id="Definately" name="recommend">
+  				<input type="radio" id="Definately" name="recommend" value="Definately">
   				Definately
   				</label><br>
   				<label id="recommend-friend" for="Not Sure">
-  				<input type="radio" id="Not" name="recommend">
+  				<input type="radio" id="Not" name="recommend" value="Not Sure">
   				Not Sure
   				</label><br>
   				<label id="recommend-friend" for="May be">
-  				<input type="radio" id="May be" name="recommend">
+  				<input type="radio" id="May be" name="recommend" value="May be">
   				May be
   				</label>
   			</fieldset>
@@ -67,23 +68,23 @@ Thank you for taking the time to help us improve the platform
   			<fieldset>
   				<legend>Your Favorite Feature about FreeCodeCamp?</legend>	
   				<label id="Favorite-feature" for="challenges">
-  				<input type="checkbox" id="challenges" name="recommend">
+  				<input type="checkbox" id="challenges" name="recommend" value="Challenges">
   				Challenges
   				</label><br>
   				<label id="Favorite-feature" for="community">
-  				<input type="checkbox" id="community" name="recommend">
+  				<input type="checkbox" id="community" name="recommend" value="Community">
   				Community
   				</label><br>
   				<label id="Favorite-feature" for="projects">
-  				<input type="checkbox" id="projects" name="recommend">
+  				<input type="checkbox" id="projects" name="recommend" value="Projects">
   				Projects
   				</label><br>
   				<label id="Favorite-feature" for="output-sync">
-  				<input type="checkbox" id="output-sync" name="recommend">
+  				<input type="checkbox" id="output-sync" name="recommend" value="Output Syncing Feature">
   				Output Syncing Feature
   				</label><br>
   				<label id="Favorite-feature" for="easy-to-learn">
-  				<input type="checkbox" id="easy-to-learn" name="recommend">
+  				<input type="checkbox" id="easy-to-learn" name="recommend" value="Easy to Learn">
   				Easy to Learn
   				</label><br>
   			</fieldset>
@@ -92,23 +93,23 @@ Thank you for taking the time to help us improve the platform
   				<fieldset>
   				<legend>What would you like to see improved?</legend>	
   				<label id="to-improve" for="Front-end-Projects">
-  				<input type="checkbox" id="Front-end-Projects" name="to-improve">
+  				<input type="checkbox" id="Front-end-Projects" name="to-improve" value="Front-end Projects"> 
   				Front-end Projects
   				</label><br>
   				<label id="to-improve" for="Back-end-Projects">
-  				<input type="checkbox" id="Back-end-Projects" name="to-improve">
+  				<input type="checkbox" id="Back-end-Projects" name="to-improve" value="Back-end Projects">
   				Back-end Projects
   				</label><br>
    				<label id="to-improve" for="Forum">
-  				<input type="checkbox" id="Forum" name="to-improve">
+  				<input type="checkbox" id="Forum" name="to-improve" value="Forum">
   				Forum
   				</label><br>
   				<label id="Favorite-feature" for="challenges">
-  				<input type="checkbox" id="challenges" name="recommend">
+  				<input type="checkbox" id="challenges" name="recommend" value="Challenges">
   				Challenges
   				</label><br>
   				<label id="Favorite-feature" for="open-community">
-  				<input type="checkbox" id="open-community" name="recommend">
+  				<input type="checkbox" id="open-community" name="recommend" value="Open-Source Community">
   				Open-Source Community
   				</label><br>
    				
@@ -117,12 +118,11 @@ Thank you for taking the time to help us improve the platform
   			<br>
   			<fieldset>
 			<legend>Any Suggestion</legend>
-  				<textarea rows="6" cols="91" name="comment" placeholder="Enter text here...">
-			</textarea></fieldset>
-  			<br>
+  				<textarea name="comment" placeholder="Enter text here..."></textarea>
+  			</fieldset><br>
   			<fieldset>
 			<legend>Submit Your Response</legend>
-			<input  id="submit" type="submit" for="submit" name="submit" onclick="alert('Your Response Have been SUBMITTED')">
+			<button id="button" type="submit" for="submit" name="submit" >SUBMIT QUERY</button> 
 			</fieldset>
 
 
@@ -131,7 +131,7 @@ Thank you for taking the time to help us improve the platform
      </main>
   <!--Main Ended-->
   <br>
-  <footer>&copy;Twinkle Sharma, created on 25 May 2020, this was my third project of front-end developing</footer>
+  <footer>&copy;Twinkle Sharma, created on 24 May 2020, this was my third project of front-end developing</footer>
   
 </body>
 </html>
