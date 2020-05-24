@@ -39,14 +39,15 @@ main{
     font-size: 30px;
     font-weight: bold;
 }
-#button{
+#submit{
+    float: right;
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 2px 2px 2px 2px red;
     font-size:1.5em;
 }
 
-#button:hover{
+#submit:hover{
     font-weight: bolder;
     color: white;
     background-color: green;
@@ -106,5 +107,4 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-   
 }
