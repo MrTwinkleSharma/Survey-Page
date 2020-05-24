@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Page</title>
+	<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">  
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1 id="title">
+freeCodeCamp Survey Form
+<br>
+Thank you for taking the time to help us improve the platform
+</h1>
+	<p id="description"> </p>  
+	<main  id="main" > 
+  		
+  		<form id="survey-form" action="action_page.php">
+  			
+  			<fieldset id="personal">
+  			<legend>Personal Information</legend>
+  			<label id="name-label" for="name" >Name:</label><br>
+   			<input type="text" id="name" name="name" placeholder="Enter Your Name"><br>
+
+
+   			<label id="age-label" for="age" >Age(Optional):</label><br>
+   			<input type="text" id="age" maxlength="2" minlength="2" placeholder="Enter Your Age"><br>
+   			
+   			<label id="email-label" for="email" >Email Address:</label><br>
+   			<input type="text" id="email" maxlength="64" placeholder="Enter a Valid Email"><br>
+   		
+
+   			<label 	id="number-label" for="number" >Contact Number:</label><br>
+   			<input type="text" id="number" maxlength="13" placeholder="Enter Contact Number"><br>		
+    		
+  			</fieldset><br>
+  			<fieldset id="dropdown">
+  					<legend>Current Role</legend>
+  			<label id="curr-rol-label" for="curr-rol">Select what describes your current role:</label>
+ 			<select id="curr-rol" name="curr-rol">
+ 				<option value="none" disabled selected> 
+          Select an Option</option>
+
+ 				<option value="Student" >Student</option>
+  				<option value="Full time Job" >Full time Job</option>
+  				<option value="Part time Job" >Part time Job</option>
+  				<option value="Learner" >Learner</option>
+  				<option value="Prefer Not to say" >Prefer Not to say</option>
+				<option value="Others">Others</option>  				
+  			</select>
+  			</fieldset><br>
+  			<fieldset>
+  				<legend>Would you recommend freeCodeCamp to a friend?</legend>	
+  				<label id="recommend-friend" for="Definately">
+  				<input type="radio" id="Definately" name="recommend">
+  				Definately
+  				</label><br>
+  				<label id="recommend-friend" for="Not Sure">
+  				<input type="radio" id="Not" name="recommend">
+  				Not Sure
+  				</label><br>
+  				<label id="recommend-friend" for="May be">
+  				<input type="radio" id="May be" name="recommend">
+  				May be
+  				</label>
+  			</fieldset>
+  			<br>
+  			<fieldset>
+  				<legend>Your Favorite Feature about FreeCodeCamp?</legend>	
+  				<label id="Favorite-feature" for="challenges">
+  				<input type="checkbox" id="challenges" name="recommend">
+  				Challenges
+  				</label><br>
+  				<label id="Favorite-feature" for="community">
+  				<input type="checkbox" id="community" name="recommend">
+  				Community
+  				</label><br>
+  				<label id="Favorite-feature" for="projects">
+  				<input type="checkbox" id="projects" name="recommend">
+  				Projects
+  				</label><br>
+  				<label id="Favorite-feature" for="output-sync">
+  				<input type="checkbox" id="output-sync" name="recommend">
+  				Output Syncing Feature
+  				</label><br>
+  				<label id="Favorite-feature" for="easy-to-learn">
+  				<input type="checkbox" id="easy-to-learn" name="recommend">
+  				Easy to Learn
+  				</label><br>
+  			</fieldset>
+
+  			<br>
+  				<fieldset>
+  				<legend>What would you like to see improved?</legend>	
+  				<label id="to-improve" for="Front-end-Projects">
+  				<input type="checkbox" id="Front-end-Projects" name="to-improve">
+  				Front-end Projects
+  				</label><br>
+  				<label id="to-improve" for="Back-end-Projects">
+  				<input type="checkbox" id="Back-end-Projects" name="to-improve">
+  				Back-end Projects
+  				</label><br>
+   				<label id="to-improve" for="Forum">
+  				<input type="checkbox" id="Forum" name="to-improve">
+  				Forum
+  				</label><br>
+  				<label id="Favorite-feature" for="challenges">
+  				<input type="checkbox" id="challenges" name="recommend">
+  				Challenges
+  				</label><br>
+  				<label id="Favorite-feature" for="open-community">
+  				<input type="checkbox" id="open-community" name="recommend">
+  				Open-Source Community
+  				</label><br>
+   				
+  			</fieldset>
+
+  			<br>
+  			<fieldset>
+			<legend>Any Suggestion</legend>
+  				<textarea rows="6" cols="91" name="comment" placeholder="Enter text here...">
+			</textarea></fieldset>
+  			<br>
+  			<fieldset>
+			<legend>Submit Your Response</legend>
+			<input  id="submit" type="submit" for="submit" name="submit" onclick="alert('Your Response Have been SUBMITTED')">
+			</fieldset>
+
+
+		</form>
+
+     </main>
+  <!--Main Ended-->
+  <br>
+  <footer>&copy;Twinkle Sharma, created on 25 May 2020, this was my third project of front-end developing</footer>
+  
+</body>
+</html>
+

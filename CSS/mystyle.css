@@ -1,0 +1,99 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+background-image: url('Tech.gif');
+background-size: 100% 100%;
+background
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+
+input{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+    
+main{
+    background: linear-gradient(35deg,#C2EAFF, #FEC2FF, #C8FFC2,#FFC6C2);
+    width: 70%;
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+#name, #age, #email, #number, #curr-rol{
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    width: 97%;
+}
+#name-label, #email-label, #age-label, #number-label,#curr-rol-label{
+    font-family:monospace;
+    color: #F800B5;
+    font-size: 30px;
+    font-weight: bold;
+}
+#submit{
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px red;
+    font-size:1.5em;
+}
+
+#submit :hover{
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+#title{
+    font-family:cursive;
+    font-style: oblique;
+    font-weight: bold;
+    color:white;
+    font-size:2em;
+    text-align: center;
+    text-shadow: 4px 4px 8px red;
+}
+option{
+    font-size: 22px;
+}
+fieldset{
+      border: 8px solid #56C5FF;
+
+}
+legend{
+    font-family: cursive;
+    color: green;
+    font-size: 30px;
+    border: 8px solid lightgreen;
+}
+#recommend-friend, #Favorite-feature, #to-improve{
+    font-size: 22px;
+}
+
+select{
+     font-weight: bold;
+    font-size: 1.4em;
+    color: 
+}
+
+textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
